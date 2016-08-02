@@ -1,0 +1,1 @@
+define(["jquery","underscore"],function(e){"use strict";return{addStyleToHeader:function(n){e("<style>").html(n).appendTo("head")}}});
