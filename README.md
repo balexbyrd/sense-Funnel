@@ -1,8 +1,8 @@
 # sense-Funnel
 d3 funnel chart for Qlik Sense. 
 
-![Screenshot](https://raw.githubusercontent.com/balexbyrd/img/master/senseFunnel.png)
-![Screenshot](https://raw.githubusercontent.com/balexbyrd/img/master/senseFunnel2.png)
+![Screenshot](https://raw.githubusercontent.com/balexbyrd/img/master/senseFunnel.PNG)
+![Screenshot](https://raw.githubusercontent.com/balexbyrd/img/master/senseFunnel2.PNG)
 
 ## Installation
 
