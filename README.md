@@ -14,7 +14,7 @@ d3 funnel chart for Qlik Sense.
 	
 ## Usage
 
-The d3 funnel chart is typically used in scenarios where there are different phases (ex. Lending, Pursuits). The funnel easily shows the magnitude in change between different phases or steps. Use the dropdown for the color palettes or dive into the js code and change the 'colors' array to any color under the sun. Selections in the UI are also enabled.
+The d3 funnel chart is typically used in scenarios where there are different phases (ex. Lending, Pursuits). Using the dynamic properties for the block, the funnel easily shows the magnitude in change between different phases or steps. Use the dropdown for the color palettes or dive into the js code and change the 'colors' array to any color under the sun. Selections in the UI are also enabled.
 
 ## Limitations
 
