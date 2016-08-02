@@ -14,7 +14,7 @@ d3 funnel chart for Qlik Sense.
 	
 ## Usage
 
-The demo modal is currently an example of how to make an AJAX post, you could also update the modal.html to show a visualization. Within the modal, there is limited form validation on the radio and text input. Check the developers console for the JSON string output and whether it was successfull or not.
+The d3 funnel chart is typically used in scenarios where there are different phases (ex. Lending, Pursuits). The funnel easily shows the magnitude in change between different phases or steps. Use the dropdown for the color palettes or dive into the js code and change the 'colors' array to any color under the sun. Selections in the UI are also enabled.
 
 ## Limitations
 
