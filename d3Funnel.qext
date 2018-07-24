@@ -1,0 +1,9 @@
+{
+  "name": "Funnel Chart",
+  "description": "Customizable funnel chart.",
+  "icon": "extension",
+  "type": "visualization",
+  "version": "1.0.0",
+  "preview": "funnelchart.png",
+  "author": "Alex Byrd"
+}

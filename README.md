@@ -18,7 +18,7 @@ The d3 funnel chart is typically used in scenarios where there are different pha
 
 ## Limitations
 
-1. Tested in Qlik Sense 3.0 in IE and Chrome (preferred).
+1. Tested in Qlik Sense June 2018 in IE and Chrome (preferred).
 2. This extension works best with < 10 distinct values for the dimension chosen. Some color palettes don't support a lot of distinct dimension values.
 3. Depending on your block property selection(s), the visualization can look a little goofy. Use your best judgement... or fix it :) 
 
