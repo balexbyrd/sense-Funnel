@@ -1,7 +1,7 @@
-var D3Funnel;
-
 require.config({
-    d3: "//cdnjs.cloudflare.com/ajax/libs/d3/4.9.0/d3.min"
+    paths: {
+        d3: "//d3js.org/d3.v4.min"
+    }
 });
 
 var dependencies = [
@@ -15,7 +15,7 @@ var dependencies = [
     "./lib/js/options"
 ];
 
-define(dependencies, function(q, t, i, a) {
+define(dependencies, function(q, t, i, a, d3, D3Funnel) {
     "use strict";
 
     function p(e, l) {
@@ -76,6 +76,7 @@ define(dependencies, function(q, t, i, a) {
                 }
             }
         };
+
         a = new D3Funnel("#chart_" + l.qInfo.qId);
         var o = u(l);
         a.draw(o, i);
@@ -95,6 +96,20 @@ define(dependencies, function(q, t, i, a) {
         return t
     }
     return i.addStyleToHeader(a), {
+        initialProperties: {
+            version: 1.0,
+            qHyperCubeDef: {
+                qDimensions: [],
+                qMeasures: [],
+                qSortCriterias: {
+                    qSortByState: 1
+                },
+                qInitialDataFetch: [{
+                    qWidth: 2,
+                    qHeight: 100
+                }]
+            }
+        },
         definition: {
             type: "items",
             component: "accordion",
@@ -269,16 +284,6 @@ define(dependencies, function(q, t, i, a) {
                         }
                     }
                 }
-            }
-        },
-        initialProperties: {
-            qHyperCubeDef: {
-                qDimensions: [],
-                qMeasures: [],
-                qInitialDataFetch: [{
-                    qWidth: 2,
-                    qHeight: 100
-                }]
             }
         },
         snapshot: {
