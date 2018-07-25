@@ -45,7 +45,6 @@ define(dependencies, function(q, t, i, a, d3, D3Funnel) {
                 bottomWidth: 1 / 3,
                 bottomPinch: l.props.chartBottomPinch,
                 inverted: l.props.chartInverted,
-                horizontal: false,
                 animate: l.props.chartAnimation,
                 curve: {
                     enabled: l.props.chartCurved,
@@ -59,7 +58,7 @@ define(dependencies, function(q, t, i, a, d3, D3Funnel) {
                 barOverlay: l.props.barOverlay,
                 fill: {
                     scale: colors,
-                    type: 'solid'
+                    type: l.props.paletteStyle
                 },
                 minHeight: l.props.blockHeight,
                 highlight: true
@@ -186,7 +185,6 @@ define(dependencies, function(q, t, i, a, d3, D3Funnel) {
                                     step: 1,
                                     defaultValue: 0
                                 },
-
                                 palette: {
                                     type: "string",
                                     component: "dropdown",
@@ -194,6 +192,22 @@ define(dependencies, function(q, t, i, a, d3, D3Funnel) {
                                     ref: "props.paletteColor",
                                     defaultValue: "tol-dv",
                                     options: colorpalette
+                                },
+                                paletteGradient: {
+                                    type: "string",
+                                    component: "dropdown",
+                                    label: "Block Style:",
+                                    ref: "props.paletteStyle",
+                                    defaultValue: "solid",
+                                    options: [{
+                                            value: 'solid',
+                                            label: "Solid"
+                                        },
+                                        {
+                                            value: 'gradient',
+                                            label: "Gradient"
+                                        },
+                                    ]
                                 },
                                 paletteR: {
                                     ref: "props.paletteColorR",
